@@ -21,8 +21,6 @@ from .const import DATA_ARVE_CLIENT, DATA_ARVE_COORDINATOR, DOMAIN, LOGGER
 from .coordinator import ArveCoordinator
 from .entity import ArveDeviceEntity
 
-SCAN_INTERVAL = timedelta(seconds=10)
-
 
 SENSORS: tuple[SensorEntityDescription, ...] = (
     SensorEntityDescription(
