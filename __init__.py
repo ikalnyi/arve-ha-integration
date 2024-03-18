@@ -32,7 +32,6 @@ async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry) -> bool:
     coordinator = ArveCoordinator(hass, arve)
 
     hass.data.setdefault(DOMAIN, {})[entry.entry_id] = {
-        DATA_ARVE_CLIENT: arve,
         DATA_ARVE_COORDINATOR: coordinator,
     }
 
